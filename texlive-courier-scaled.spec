@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/psfonts/courier-scaled
+# catalog-date 2007-03-20 00:06:44 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-courier-scaled
 Version:	20070320
 Release:	1
@@ -49,6 +55,7 @@ for Helvetica works for sans serif).
 %{_texmfdistdir}/tex/latex/courier-scaled/xl2pcrs.fd
 %doc %{_texmfdistdir}/doc/latex/courier-scaled/Couriers.pdf
 %doc %{_texmfdistdir}/doc/latex/courier-scaled/README
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ for Helvetica works for sans serif).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
