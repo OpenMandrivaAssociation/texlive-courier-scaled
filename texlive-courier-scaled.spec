@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-courier-scaled
 Version:	20070320
-Release:	1
+Release:	2
 Summary:	Provides a scaled Courier font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/psfonts/courier-scaled
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This package sets the default typewriter font to Courier with a
@@ -26,19 +24,19 @@ possible scale factor (in the same way as the helvet package
 for Helvetica works for sans serif).
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
