@@ -23,16 +23,8 @@ This package sets the default typewriter font to Courier with a
 possible scale factor (in the same way as the helvet package
 for Helvetica works for sans serif).
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -54,7 +46,6 @@ for Helvetica works for sans serif).
 %{_texmfdistdir}/tex/latex/courier-scaled/xl2pcrs.fd
 %doc %{_texmfdistdir}/doc/latex/courier-scaled/Couriers.pdf
 %doc %{_texmfdistdir}/doc/latex/courier-scaled/README
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,5 +56,3 @@ for Helvetica works for sans serif).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
