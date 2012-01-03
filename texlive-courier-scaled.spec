@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-courier-scaled
 Version:	20070320
-Release:	2
+Release:	3
 Summary:	Provides a scaled Courier font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/psfonts/courier-scaled
