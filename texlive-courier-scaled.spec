@@ -1,16 +1,16 @@
-# revision 15878
+# revision 24940
 # category Package
 # catalog-ctan /fonts/psfonts/courier-scaled
-# catalog-date 2007-03-20 00:06:44 +0100
-# catalog-license lppl
+# catalog-date 2011-12-25 01:31:26 +0100
+# catalog-license lppl1.2
 # catalog-version undef
 Name:		texlive-courier-scaled
-Version:	20070320
-Release:	3
+Version:	20111225
+Release:	1
 Summary:	Provides a scaled Courier font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/psfonts/courier-scaled
-License:	LPPL
+License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/courier-scaled.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/courier-scaled.doc.tar.xz
 BuildArch:	noarch
@@ -44,8 +44,9 @@ for Helvetica works for sans serif).
 %{_texmfdistdir}/tex/latex/courier-scaled/t5pcrs.fd
 %{_texmfdistdir}/tex/latex/courier-scaled/ts1pcrs.fd
 %{_texmfdistdir}/tex/latex/courier-scaled/xl2pcrs.fd
-%doc %{_texmfdistdir}/doc/latex/courier-scaled/Couriers.pdf
-%doc %{_texmfdistdir}/doc/latex/courier-scaled/README
+%doc %{_texmfdistdir}/doc/fonts/courier-scaled/Couriers.pdf
+%doc %{_texmfdistdir}/doc/fonts/courier-scaled/Couriers.tex
+%doc %{_texmfdistdir}/doc/fonts/courier-scaled/README
 
 #-----------------------------------------------------------------------
 %prep
