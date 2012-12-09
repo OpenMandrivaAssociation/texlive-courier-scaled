@@ -57,3 +57,25 @@ for Helvetica works for sans serif).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111225-1
++ Revision: 758858
+- Update to latest upstream release
+
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070320-3
++ Revision: 750557
+- Rebuild to reduce used resources
+
+* Mon Dec 26 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070320-2
++ Revision: 745205
+- texlive-courier-scaled
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070320-1
++ Revision: 718157
+- texlive-courier-scaled
+- texlive-courier-scaled
+- texlive-courier-scaled
+- texlive-courier-scaled
+
