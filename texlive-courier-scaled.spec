@@ -5,8 +5,8 @@
 # catalog-license lppl1.2
 # catalog-version undef
 Name:		texlive-courier-scaled
-Version:	20180303
-Release:	3
+Version:	20190228
+Release:	1
 Summary:	Provides a scaled Courier font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/psfonts/courier-scaled
