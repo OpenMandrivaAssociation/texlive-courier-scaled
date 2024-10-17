@@ -3,7 +3,7 @@ Version:	24940
 Release:	2
 Summary:	Provides a scaled Courier font
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/psfonts/courier-scaled
+URL:		https://www.ctan.org/tex-archive/fonts/psfonts/courier-scaled
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/courier-scaled.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/courier-scaled.doc.r%{version}.tar.xz
